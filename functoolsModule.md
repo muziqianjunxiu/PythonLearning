@@ -4,7 +4,7 @@
 
 
 
-**1.@functools.wraps****装饰器**
+**1.@functools.wraps** **装饰器**
 
 函数包含若干属性，如__name__、__doc__等。函数被装饰后其特殊属性将变成相应装饰器函数的特殊属性内容，当使用反射时，可能会导致意外结果。使用functools模块的wraps装饰器用于解决该问题。使用wraps装饰函数foo，则foo装饰的函数的特殊属性保留。
 
@@ -76,7 +76,7 @@ if __name__==’__main__’:
 
 
 
-**2.functools.update_wrapper****函数**
+**2.functools.update_wrapper** **函数**
 
 使用update__wrapper函数也可以指定wrapper函数使用指定的特殊属性。
 
@@ -112,7 +112,7 @@ if __name__==’__main__’:
 
 
 
-**3.functools.total_ordering****装饰器**
+**3.functools.total_ordering** **装饰器**
 
 ​	支持大小比较的对象需要实现特殊方法：__eq__、__lt__、__le__、__ge__、__gt__。使用functools模块的total_ordering装饰器装饰类，则只需要实现__eq__,以及__lt__、__le__、__ge__、__gt__中的任意一个即可。
 
@@ -159,7 +159,7 @@ print a >= b
 
 
 
-**4.@functools.lru_cache装饰器**
+**4.@functools.lru_cache** **装饰器**
 
 ​	可以缓存最多maxsize谷歌此函数的调用结果，从而提高程序执行效率，特别适合耗时的函数或i/o函数
 
@@ -171,7 +171,7 @@ print a >= b
 
 
 
-**5.partial****对象**
+**5.partial** **对象**
 
 ​	重新绑定函数的可选参数，生成一个可调用（callable）的partial对象：
 
@@ -189,7 +189,7 @@ print(format(pow2(i), ‘0.0f’))
 >>>1 2 4 8 16 32 64 128 256 512 1024
 ```
 
-**6.reduce****函数**
+**6.reduce** **函数**
 
 reduce使用指定的带两个参数的函数func，对一个数据集合（可迭代对象）的所有数据进行下列操作：使用第1,2个数据作为参数用func函数运算，得到的结果再与第3个数据作为参数用func函数运算，以此类推最后得到一个结果。可选的initializer为初始值。
 
